@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#24236b">
+  <meta name="theme-color" content="#001b5b">
   <meta name="description"
     content="Vidira Xpress provides courier pickup, parcel delivery and business logistics services from Andhra Pradesh across India. Request a pickup or join our delivery network.">
   <title>Vidira Xpress | Delivering Trust, Every Time</title>
@@ -18,14 +18,16 @@
     rel="stylesheet">
   <style>
     :root {
-      --navy: #102844;
-      --deep: #091d32;
-      --orange: #f47932;
-      --pale: #fff2e9;
-      --ink: #13263b;
-      --muted: #58677a;
-      --line: #e3e9ef;
-      --wash: #f6f8fb;
+      --navy: #001b5b;
+      --deep: #00143f;
+      --orange: #fa3c00;
+      --orange-ink: #e03400;
+      --on-dark: #ff8a4c;
+      --pale: #fff1eb;
+      --ink: #10203d;
+      --muted: #5c6b80;
+      --line: #e3e8ef;
+      --wash: #f4f7fb;
       --white: #fff;
       scroll-behavior: smooth
     }
@@ -1188,13 +1190,13 @@
       }
 
       .hero-main {
-        min-height: 650px;
-        background: linear-gradient(180deg, #091d32 0%, #091d32e8 42%, #091d3299 67%, #091d3230 100%), url('vidira-hero-3d-match.png') 62% bottom/auto 62% no-repeat;
+        min-height: 680px;
+        background: linear-gradient(180deg, #091d32 0%, #091d32f0 35%, #091d3280 60%, #091d3230 80%, transparent 100%), url('vidira-hero-3d-match.png') center bottom/auto 100% no-repeat;
         background-color: #091d32
       }
 
       .hero-content {
-        padding-block: 55px 250px
+        padding-block: 55px 40px
       }
 
       .hero h1 {
@@ -1294,11 +1296,12 @@
       }
 
       .hero-main {
-        background-size: auto 52%
+        min-height: 620px;
+        background-size: auto 90%
       }
 
       .hero-content {
-        padding-bottom: 225px
+        padding-bottom: 30px
       }
 
       .about-pillars,
@@ -1404,15 +1407,17 @@
       }
     }
 
-    /* Vidira's indigo and orange identity from the supplied reference. */
+    /* Vidira navy and orange, matched to the logo. */
     :root {
-      --navy: oklch(28% .15 268);
-      --deep: oklch(22% .08 270);
-      --orange: oklch(70.4% .197 41.5);
-      --pale: #fff2ed;
-      --ink: oklch(22% .08 270);
-      --muted: #616b80;
-      --wash: #f7f8fc
+      --navy: #001b5b;
+      --deep: #00143f;
+      --orange: #fa3c00;
+      --orange-ink: #e03400;
+      --on-dark: #ff8a4c;
+      --pale: #fff1eb;
+      --ink: #10203d;
+      --muted: #5c6b80;
+      --wash: #f4f7fb
     }
 
     .icon-sprite {
@@ -1695,7 +1700,8 @@
 
     @media(max-width:880px) {
       .hero-main {
-        background: linear-gradient(180deg, #171a48 0%, #171a48ed 42%, #171a4899 67%, #171a4830 100%), url('vidira-hero-3d-match.png') 62% bottom/auto 62% no-repeat;
+        min-height: 680px;
+        background: linear-gradient(180deg, #171a48 0%, #171a48f0 35%, #171a4880 60%, #171a4830 80%, transparent 100%), url('vidira-hero-3d-match.png') center bottom/auto 100% no-repeat;
         background-color: #171a48
       }
     }
@@ -1918,7 +1924,7 @@
       }
 
       .hero-main {
-        background: linear-gradient(180deg, #071a36 0%, #071a36ee 40%, #071a3688 66%, #071a3630 100%), url('vidira-hero-3d-match.png') 61% bottom/auto 63% no-repeat;
+        background: linear-gradient(180deg, #071a36 0%, #071a36f0 35%, #071a3680 60%, #071a3630 80%, transparent 100%), url('vidira-hero-3d-match.png') center bottom/auto 100% no-repeat;
         background-color: #071a36
       }
     }
@@ -1947,7 +1953,8 @@
       }
 
       .hero-main {
-        background-size: auto 50%
+        min-height: 620px;
+        background-size: auto 90%
       }
     }
 
@@ -2580,6 +2587,512 @@
         width: 100%
       }
     }
+
+    /* Brand surfaces use the logo navy and orange, not the earlier indigo mix. */
+    .btn-primary {
+      background: var(--orange-ink);
+      color: #fff
+    }
+
+    .btn-primary:hover {
+      background: var(--orange);
+      box-shadow: 0 8px 22px #fa3c0038
+    }
+
+    .eyebrow {
+      color: var(--orange-ink)
+    }
+
+    .hero,
+    .topbar,
+    .contact {
+      background: var(--deep)
+    }
+
+    .hero-main {
+      background: linear-gradient(90deg, #00143ff2 0%, #00143fe0 16%, #00143f8c 34%, #00143f2e 50%, transparent 62%), url('vidira-hero-3d-match.png') right center/cover no-repeat
+    }
+
+    .hero-main:after {
+      height: 64px;
+      background: linear-gradient(transparent, #00143f73)
+    }
+
+    .hero-photo {
+      display: none
+    }
+
+    .hero .eyebrow,
+    .hero h1 span,
+    .pickup-copy .eyebrow,
+    .contact .eyebrow,
+    .presence-card .card-kicker,
+    .mini-icon,
+    .location-pin,
+    .pickup-details b,
+    .pickup-details li .icon {
+      color: var(--on-dark)
+    }
+
+    .mini-icon,
+    .location-pin {
+      border-color: #8aa4cc
+    }
+
+    .services-intro h2 span {
+      color: var(--orange-ink)
+    }
+
+    .spotlight-main,
+    .pickup-card,
+    .presence-card,
+    .pickup-booking-icon {
+      background: var(--navy);
+      color: #fff
+    }
+
+    .pickup-booking-icon {
+      color: var(--navy);
+      background: #fff
+    }
+
+    .spotlight-head {
+      color: #c5d4ee
+    }
+
+    .spotlight-head .icon,
+    .spotlight-main a {
+      color: #fff
+    }
+
+    .spotlight-main a {
+      border-bottom-color: var(--on-dark)
+    }
+
+    .spotlight-main p,
+    .presence-card>p,
+    .pickup-copy p {
+      color: #d5e2f5
+    }
+
+    .spotlight-main:before {
+      border-color: #ffffff38
+    }
+
+    .service-icon,
+    .spotlight-icon,
+    .purpose-icon {
+      background: #e8eef8;
+      color: var(--navy)
+    }
+
+    .benefits span .icon {
+      color: var(--navy)
+    }
+
+    .location-list,
+    .location {
+      border-color: #3d5d8c
+    }
+
+    .pickup-visual:after {
+      background: linear-gradient(90deg, var(--navy), transparent)
+    }
+
+    .pickup-copy .pickup-booking {
+      background: var(--orange-ink);
+      border-color: transparent;
+      box-shadow: 0 11px 25px #00143f55
+    }
+
+    .pickup-copy .pickup-booking:hover {
+      background: var(--orange);
+      box-shadow: 0 14px 28px #00143f66
+    }
+
+    .footer {
+      border-top-color: #2a4578
+    }
+
+    @media(max-width:1024px) {
+      h1,
+      .hero h1 {
+        font-size: clamp(2.2rem, 4.4vw, 3.05rem)
+      }
+
+      h2 {
+        font-size: clamp(1.75rem, 2.8vw, 2.3rem)
+      }
+
+      .pickup-copy h2 {
+        font-size: clamp(1.9rem, 3.6vw, 2.55rem)
+      }
+
+      .spotlight-main h3 {
+        font-size: clamp(1.7rem, 2.8vw, 2.25rem)
+      }
+
+      .section {
+        padding-block: 56px
+      }
+
+      .hero-content {
+        padding-block: 52px 32px
+      }
+
+      .hero h1 {
+        margin: 16px 0 14px
+      }
+
+      .faq-grid {
+        margin-top: 48px
+      }
+    }
+
+    @media(max-width:880px) {
+      .container {
+        width: min(1200px, calc(100% - 40px))
+      }
+
+      .hero h1 {
+        font-size: clamp(2.15rem, 5vw, 2.85rem)
+      }
+
+      .hero-main {
+        min-height: 520px;
+        background: linear-gradient(90deg, #00143ff5 0%, #00143fe6 28%, #00143f73 46%, transparent 64%), url('vidira-hero-3d-match.png') 78% center/cover no-repeat;
+        background-color: #00143f
+      }
+
+      .hero h1 {
+        max-width: 420px
+      }
+
+      .hero p {
+        max-width: 320px
+      }
+
+      .hero p {
+        text-shadow: none
+      }
+
+      .hero-content {
+        padding-block: 40px 24px
+      }
+
+      .hero-sub {
+        padding-block: 16px
+      }
+
+      .section {
+        padding-block: 48px
+      }
+
+      .pickup {
+        padding-block: 48px
+      }
+
+      .pickup-copy h2 {
+        font-size: clamp(1.85rem, 4.5vw, 2.4rem)
+      }
+
+      .services-intro>p {
+        margin-top: 12px
+      }
+
+      .spotlight-main,
+      .spotlight-small {
+        min-height: 0
+      }
+
+      .contact-grid {
+        gap: 24px
+      }
+
+      .footer {
+        margin-top: 32px
+      }
+    }
+
+    @media(min-width:760px) and (max-width:880px) {
+      .about-layout,
+      .partner-layout,
+      .pickup-card,
+      .faq-grid,
+      .network-showcase,
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px
+      }
+
+      .service-spotlight {
+        grid-template-columns: 1.12fr .88fr;
+        min-height: 0
+      }
+
+      .spotlight-stack {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto
+      }
+
+      .services-intro {
+        display: flex;
+        align-items: end
+      }
+
+      .services-intro>p {
+        margin-top: 0
+      }
+
+      .stats {
+        grid-template-columns: repeat(4, 1fr)
+      }
+
+      .stat:nth-child(2) {
+        border-right: 1px solid #dce4ed
+      }
+
+      .stat:nth-child(3) {
+        padding-left: 22px
+      }
+
+      .contact-cta {
+        flex-direction: row;
+        align-items: center
+      }
+
+      .pickup-visual {
+        min-height: 100%
+      }
+
+      .pickup-details ul {
+        grid-template-columns: 1fr
+      }
+
+      .pickup-visual:after {
+        display: block
+      }
+
+      .services-detail {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .services-detail .service-category+.service-category {
+        border-left: 1px solid #e3e8ef;
+        border-top: 0
+      }
+
+      .services-detail .service-category:last-child {
+        grid-column: 1 / -1;
+        border-left: 0;
+        border-top: 1px solid #e3e8ef
+      }
+    }
+
+    @media(max-width:720px) {
+      .container {
+        width: min(1200px, calc(100% - 28px))
+      }
+
+      h1,
+      .hero h1 {
+        font-size: 2rem;
+        letter-spacing: -.03em
+      }
+
+      h2,
+      .contact-cta h2,
+      .contact-form-intro h2 {
+        font-size: 1.6rem
+      }
+
+      h3,
+      .category-heading h3,
+      .spotlight-small h3,
+      .presence-card h3 {
+        font-size: 1.2rem
+      }
+
+      .hero p,
+      .services-intro>p,
+      .about-intro>p,
+      .pickup-copy p,
+      .network-heading p {
+        font-size: .98rem;
+        line-height: 1.6
+      }
+
+      .pickup-copy h2 {
+        font-size: 1.85rem
+      }
+
+      .spotlight-main h3 {
+        font-size: 1.6rem
+      }
+
+      .stat strong {
+        font-size: 1.45rem
+      }
+
+      .eyebrow {
+        font-size: .72rem;
+        letter-spacing: .08em
+      }
+
+      .section {
+        padding-block: 36px
+      }
+
+      .hero-content {
+        padding-block: 28px 16px
+      }
+
+      .hero h1 {
+        margin: 12px 0 10px
+      }
+
+      .hero-actions {
+        margin-top: 16px;
+        gap: 8px
+      }
+
+      .hero-actions .btn {
+        min-height: 46px;
+        padding: 10px 14px;
+        font-size: .88rem
+      }
+
+      .hero-main {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        background: #00143f;
+        background-image: none
+      }
+
+      .hero-main:after {
+        display: none
+      }
+
+      .hero-content {
+        padding-bottom: 8px
+      }
+
+      .hero-photo {
+        display: block;
+        width: 100%;
+        height: 340px;
+        margin: 12px 0 0;
+        object-fit: cover;
+        object-position: 78% 36%
+      }
+
+      .hero h1,
+      .hero p {
+        max-width: none
+      }
+
+      .hero-sub {
+        gap: 8px;
+        padding-block: 14px
+      }
+
+      .services-intro {
+        margin-bottom: 18px
+      }
+
+      .spotlight-main,
+      .spotlight-small {
+        padding: 18px 16px
+      }
+
+      .services-detail {
+        margin-top: 14px
+      }
+
+      .service-category {
+        padding: 16px 14px
+      }
+
+      .contact-cta {
+        margin-top: 24px;
+        padding: 18px 16px;
+        gap: 14px
+      }
+
+      .faq-grid {
+        margin-top: 28px;
+        gap: 14px
+      }
+
+      .about-panel,
+      .partner-steps,
+      .earning-card,
+      .presence-card,
+      .alliance-card {
+        padding: 18px 16px
+      }
+
+      .purpose-block+.purpose-block {
+        margin-top: 14px;
+        padding-top: 14px
+      }
+
+      .stats {
+        margin-top: 22px;
+        padding-top: 14px;
+        row-gap: 14px
+      }
+
+      .pickup {
+        padding-block: 36px
+      }
+
+      .pickup-copy {
+        padding: 22px 16px 24px
+      }
+
+      .pickup-visual {
+        min-height: 210px
+      }
+
+      .pickup-details {
+        margin-top: 14px;
+        padding-top: 12px
+      }
+
+      .about-pillars {
+        margin-top: 16px;
+        gap: 10px
+      }
+
+      .benefits {
+        margin: 16px 0
+      }
+
+      .network-heading,
+      .heading-row {
+        margin-bottom: 16px
+      }
+
+      .contact {
+        padding-block: 36px 16px
+      }
+
+      .contact-grid {
+        gap: 18px
+      }
+
+      .footer {
+        margin-top: 22px;
+        padding-top: 14px;
+        gap: 12px
+      }
+
+      .logo-tile {
+        height: 64px
+      }
+    }
   </style>
 </head>
 
@@ -2730,6 +3243,8 @@
                 <use href="#i-arrow-down"></use>
               </svg></a></div>
         </div>
+        <img class="hero-photo" src="vidira-hero-3d-match.png"
+          alt="A Vidira courier handing a parcel to a customer at her door" width="1673" height="940">
       </div>
       <div class="container hero-sub">
         <div class="mini"><span class="mini-icon"><svg class="icon" aria-hidden="true">
